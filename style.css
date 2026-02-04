@@ -1,0 +1,100 @@
+/* Reset & base styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* Center calculator on screen */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Calculator container */
+.tbl {
+  background: #1e1e2f;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  border-spacing: 12px;
+}
+
+/* Display input */
+#result {
+  width: 100%;
+  height: 70px;
+  font-size: 28px;
+  padding: 10px;
+  text-align: right;
+  border: none;
+  border-radius: 12px;
+  background: #2d2d44;
+  color: #ffffff;
+  outline: none;
+}
+
+/* All buttons */
+.tbl input[type="button"] {
+  width: 70px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background: #3b3b5c;
+  color: #ffffff;
+  transition: all 0.2s ease;
+}
+
+/* Button hover effect */
+.tbl input[type="button"]:hover {
+  background: #4e4e78;
+  transform: translateY(-2px);
+}
+
+/* Button click effect */
+.tbl input[type="button"]:active {
+  transform: scale(0.96);
+}
+
+/* Clear button */
+#clear {
+  background: #e63946;
+}
+
+#clear:hover {
+  background: #ff4d5a;
+}
+
+/* Equal button */
+.tbl input[value="="] {
+  background: #38b000;
+  font-size: 24px;
+}
+
+.tbl input[value="="]:hover {
+  background: #52d600;
+}
+
+/* Operator buttons */
+.tbl input[value="+"],
+.tbl input[value="-"],
+.tbl input[value="*"],
+.tbl input[value="/"] {
+  background: #ff9f1c;
+  color: #1e1e2f;
+  font-weight: bold;
+}
+
+.tbl input[value="+"]:hover,
+.tbl input[value="-"]:hover,
+.tbl input[value="*"]:hover,
+.tbl input[value="/"]:hover {
+  background: #ffb347;
+}
